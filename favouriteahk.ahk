@@ -36,7 +36,7 @@ return
 
 
 :://gmtinfo::
-ClipSaved := ClipboardAll ; save the entire clipboard to the variable ClipSaved
+;ClipSaved := ClipboardAll ; save the entire clipboard to the variable ClipSaved
 clipboard := ""           ; empty the clipboard (start off empty to allow ClipWait to detect when the text has arrived)
 clipboard =               ; copy this text:
 (

@@ -59,8 +59,8 @@ ClipWait, 2              ; wait max. 2 seconds for the clipboard to contain data
 if (!ErrorLevel)         ; If NOT ErrorLevel, ClipWait found data on the clipboard
     Send, ^v             ; paste the text
 Sleep, 300
-clipboard := ClipSaved   ; restore original clipboard
-ClipSaved =              ; Free the memory in case the clipboard was very large.
+;clipboard := ClipSaved   ; restore original clipboard
+;ClipSaved =              ; Free the memory in case the clipboard was very large.
 return
 
 :://em1:: kals.future@gmail.com
