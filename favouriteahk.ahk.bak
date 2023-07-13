@@ -13,10 +13,9 @@ FormatTime, xx,, yyyMMdd HHss
 SendInput, %xx%
 return
 
+
 :://tsd:: 
 FormatTime, xx,, yyy/MM/dd HH:ss
-;SendInput,Translated By: Ramesh Dura, Translation Date: %xx%, Company Name: GMT International Co. Ltd., Address: 〒169-0073 Tokyo Prefecture, Shinjuku City, Hyakunincho, 2-14-4, Tel: 03-5937-5314, Cell: 080-4150-5314
-
 ClipSaved := ClipboardAll ; save the entire clipboard to the variable ClipSaved
 clipboard := ""           ; empty the clipboard (start off empty to allow ClipWait to detect when the text has arrived)
 clipboard =               ; copy this text:
@@ -31,8 +30,8 @@ ClipWait, 2              ; wait max. 2 seconds for the clipboard to contain data
 if (!ErrorLevel)         ; If NOT ErrorLevel, ClipWait found data on the clipboard
     Send, ^v             ; paste the text
 Sleep, 300
-clipboard := ClipSaved   ; restore original clipboard
-ClipSaved =              ; Free the memory in case the clipboard was very large.
+; clipboard := ClipSaved   ; restore original clipboard
+; ClipSaved =              ; Free the memory in case the clipboard was very large.
 return
 
 
@@ -83,14 +82,6 @@ return
 Send, {BackSpace BackSpace BackSpace BackSpace BackSpace}
 Run, notion://www.notion.so/Work-To-Never-Regret-cfc0a9c88c484e16bda5f73269ef6eb0
 return
-
-
-
-
-
-
-
-
 
 
 ;-- DOSCOMMANDHERE XP ctrl+alt+d :
